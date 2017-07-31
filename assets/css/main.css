@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'miso-regular';
+  src: url('../fonts/miso-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'miso-bold';
+  src: url('../fonts/miso-bold-webfont.woff') format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #FADC7E;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  align-items: center;
+}
+
+.cup {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 36px;
+  width: 360px;
+  height: 440px;
+  background: #fff;
+  text-align: center;
+}
+
+.cup:nth-child(2) {
+  height: 500px;
+  padding: 30px 0 56px;
+}
+
+.cup__price {
+  font-family: 'miso-bold', sans-serif;
+  color: #02995b;
+  font-size: 70px;
+}
+
+.cup__img {
+  position: relative;
+  padding-left: 15px;
+  margin-top: 67px;
+}
+
+.cup__img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 45px;
+  background: url(../img/bean.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.cup__img--yellow {
+  margin: 86px 0 10px;
+}
+
+.cup__img--orange::before {
+  content: "";
+  position: absolute;
+  top: -57px;
+  left: 54px;
+  display: block;
+  height: 46px;
+  width: 49px;
+  background: url(../img/orange-smoke.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.cup__img--yellow::before {
+  content: "";
+  position: absolute;
+  top: -57px;
+  left: 54px;
+  display: block;
+  height: 46px;
+  width: 49px;
+  background: url(../img/yellow-smoke.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.cup__img--grey::before {
+  content: "";
+  position: absolute;
+  top: -57px;
+  left: 54px;
+  display: block;
+  height: 46px;
+  width: 49px;
+  background: url(../img/grey-smoke.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.cup__title {
+  margin: 0;
+  font-family: 'miso-bold', sans-serif;
+  font-size: 56px;
+  line-height: 104px;
+}
+
+.cup__text {
+  margin: 0;
+  width: 159px;
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+}
